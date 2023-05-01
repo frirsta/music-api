@@ -1,13 +1,12 @@
-import { useState } from "react";
 import "./App.css";
+import Search from "./components/Search";
 
 function App() {
-  const [search, setSearch] = useState('');
-  const [list, setList] = useState([]);
-  const [results, setResults] = useState('')
 
-  
-  return <div>hello</div>;
+
+  return <div>
+    <Search />
+  </div>;
 }
 
 export default App;
