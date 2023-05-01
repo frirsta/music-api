@@ -1,0 +1,8 @@
+.App{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(5, 40, 54);
+}
+.SearchContainer{
+    margin: 0 auto;
+}

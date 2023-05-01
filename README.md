@@ -71,3 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## RapidAPI
 https://rapidapi.com/apidojo/api/shazam
+
+material ui
+npm install @mui/joy @emotion/react @emotion/styled
