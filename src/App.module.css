@@ -1,8 +1,54 @@
-.App{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(5, 40, 54);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+.App {
+  background: url("./assets/background.jpg") center center;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 }
-.SearchContainer{
-    margin: 0 auto;
+.SearchContainer {
+  max-width: 90vw;
+  position: absolute;
+  top: 50px;
+}
+.SearchForm {
+  border-radius: 10px;
+  background-color: #4b3da7;
+  opacity: 0.9;
+  padding: 30px;
+}
+.Button {
+  margin: 10px 0 !important;
+  color: #fff !important;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 100;
+}
+
+.MusicCardContainer{
+  margin: 10px auto;
+}
+
+.MusicCard{
+  max-width: 70vw;
+  margin: 0 auto;
+  height: 70px;
+  border: #4b3da7!important;
+  background-color: #4b3da7!important;
+  opacity: 0.9;
+}
+.MusicCardImage{
+  width: 70px!important;
+}
+.MusicCardDescription{
+  font-size: 15px!important;
+  color: #fff!important;
+}
+.Artist{
+  color: #bbb9b9!important;
 }

@@ -3,12 +3,13 @@ import AspectRatio from "@mui/joy/AspectRatio";
 import Link from "@mui/joy/Link";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
+import styles from '../App.module.css'
 
 const MusicCard = ({image, title, artist, alt}) => {
   return (
-    <div>
+    <div className={styles.MusicCardContainer}>
             <Card
-            
+            className={styles.MusicCard}
               variant="outlined"
               orientation="horizontal"
               sx={{
@@ -20,7 +21,7 @@ const MusicCard = ({image, title, artist, alt}) => {
                 },
               }}
             >
-              <AspectRatio ratio="1" sx={{ width: 90 }}>
+              <AspectRatio  className={styles.MusicCardImage} ratio="1" sx={{ width: 90 }}>
                 <img
                   src={image}
                   alt={alt}
@@ -34,9 +35,11 @@ const MusicCard = ({image, title, artist, alt}) => {
                 fontSize="lg"
                 id="card-description"
                 mb={0.5}
+                className={styles.MusicCardDescription}
               >
                 <p>{title}</p>
                 <Link
+                  className={styles.Artist}
                   overlay
                   underline="none"
                   href="#interactive-card"

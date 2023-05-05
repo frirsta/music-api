@@ -74,3 +74,6 @@ https://rapidapi.com/apidojo/api/shazam
 
 material ui
 npm install @mui/joy @emotion/react @emotion/styled
+
+background image
+Bild av Josh Sorenson: https://www.pexels.com/sv-se/foto/hander-manniskor-lampor-oskarpa-976866/

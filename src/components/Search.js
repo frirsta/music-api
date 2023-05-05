@@ -13,7 +13,7 @@ function Search() {
   useEffect(() => {
     const fetchApi = () => {
       fetch(
-        `https://shazam.p.rapidapi.com/search?term=+${search}&locale=en-US&offset=0&limit=5`,
+        `https://shazam.p.rapidapi.com/search?term=+${search}&locale=en-US&offset=0&limit=4`,
         {
           method: "GET",
           headers: {
@@ -45,17 +45,18 @@ function Search() {
 
   return (
     <div className={styles.SearchContainer}>
-      <form onSubmit={handleSubmit}>
+      <h1 className={styles.title}>Search for song or artist</h1>
+      <form className={styles.SearchForm} onSubmit={handleSubmit}>
         <Input
           type="text"
           value={search}
           onChange={handleChange}
           color="info"
           placeholder="type artist or title..."
-          size="md"
+          size="sm"
         />
 
-        <Button color="info" type="submit" size="lg" variant="outlined">
+        <Button className={styles.Button} color="info" type="submit" size="sm" variant="outlined">
           Search
         </Button>
       </form>
